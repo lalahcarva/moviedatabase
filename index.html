@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Movies Database</title>
+    <meta name="author" content="Larissa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="banner">
+        <div class="container">
+            <h1>Movies Database</h1>
+            <p>
+                A database to help you when you need movie ideas.
+            </p>
+        </div>
+    </header>
+
+    <section class="content">
+
+        <div class="column1">
+            <h2>Submit a movie</h2>
+            <p>Here you can submit a movie using it's IMDb ID.</p>
+            <form id="mvForm">
+                <label for="mvImdb">IMDb ID:</label>
+                <input type="text" id="mvImdb" name="mvImdb" required><br>
+            
+                <label for="mvNotes">Notes:</label>
+                <textarea id="mvNotes" name="mvNotes" required></textarea><br>
+            
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+
+        <div class="column2">
+            <h2>Movie Generator</h2>
+            <p>Click here to generate a random movie to watch.</p>
+            <button id="generateMv">Click here</button>
+            <div id="movie"></div>
+        </div>
+
+    </section>
+
+    <footer><img style="width: 100%;" src="/images/footer.png"></footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
